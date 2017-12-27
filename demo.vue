@@ -2,12 +2,12 @@
   <div class="mod-wrap">
     <scroller
       v-if="!loading && list.length"
-      :noMore="noMore"
       :loading="loading"
+      :noMore="noMore"
       @onRefresh="onRefresh"
       @onLoadmore="onLoadmore">
       <ul>
-        <li>...</li>
+        <li v-for="(item, index) in list" :key="index">...</li>
       </ul>
     </scroller>
     <div class="no-data" v-if="!loading && !list.length">暂无数据</div>
@@ -29,12 +29,12 @@
     },
     data() {
       return {
+        loading: true,
         noMore: false,
-        loading: 1,
+        list: [],
         params: {
           page: 1
-        },
-        list: []
+        }
       }
     },
     methods: {
@@ -57,12 +57,12 @@
         }
         // 请求数据
         __getList(this.params).then(res => {
-          this.loading = 0  // 关闭page-loading占位
+          this.loading = 0  // 关闭页面loading占位
           let data = res.data.data
           if (data.list.length === 0) {
             this.noMore = true
           }
-          // 完成回调，关闭scroller-loading占位
+          // 完成回调，关闭加载loading占位
           if(done) done(this.noMore)
         })
       }

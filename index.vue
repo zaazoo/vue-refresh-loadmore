@@ -55,7 +55,7 @@
     },
     props: {
       loading: {
-        type: Number,
+        type: Number || Boolean,
         required: true
       }
     },
