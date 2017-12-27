@@ -10,7 +10,7 @@
     
 ## 使用方法：  
 
-#### template  
+#### 一、template  
 
        <scroller  
             v-if="!loading && list.length"  
@@ -22,9 +22,9 @@
                 <li v-for="(item, index) in list" :key="index">...</li>  
             </ul>  
        </scroller>  
-
-#### script  
-  
+ 
+#### 二、script  
+ 
     1.  import Scroller from './vue-scroller/index.vue'  
 
     2.  components: {  
@@ -86,4 +86,9 @@
     5.  created () {
         this.getData()
     }
-    
+ 
+#### 三、运行
+
+    $ npm install iscroll --save
+    $ npm install vue-iscroll-view --save
+    $ npm run dev
