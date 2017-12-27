@@ -12,8 +12,8 @@
 
     3. data() {  
            return {  
-           noMore: false,  // 没有更多了  
            loading: true,  // 页面加载的状态  
+           noMore: false,  // 没有更多了  
            list: []        // 页面li数据  
        }  
 
@@ -35,11 +35,11 @@
     5. template:  
        <scroller  
            v-if="!loading && list.length"  
-           :noMore="noMore"  
            :loading="loading"  
+           :noMore="noMore"  
            @onRefresh="onRefresh"  
            @onLoadmore="onLoadmore">  
            <ul>  
-               <li v-for="(item, index) in list">...</li>  
+               <li v-for="(item, index) in list" :key="index">...</li>  
            </ul>  
        </scroller>  
