@@ -9,7 +9,7 @@
     
     
 ## 使用方法：  
-
+  
 #### 一、template  
 
        <scroller  
@@ -22,7 +22,7 @@
                 <li v-for="(item, index) in list" :key="index">...</li>  
             </ul>  
        </scroller>  
- 
+  
 #### 二、script  
  
     1.  import Scroller from './vue-scroller/index.vue'  
@@ -86,8 +86,8 @@
     5.  created () {
         this.getData()
     }
- 
-#### 三、运行
+  
+#### 三、运行  
 
     $ npm install iscroll --save
     $ npm install vue-iscroll-view --save
