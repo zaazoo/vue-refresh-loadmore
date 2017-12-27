@@ -5,15 +5,18 @@
 ## 使用方法：  
 
 >  1. import Scroller from '../../common/__Scroller/index.vue'  
-  2. components: {  
+
+>  2. components: {  
        Scroller  
      }  
-  3. data() {  
+
+>  3. data() {  
        return {  
          noMore: false,  // 没有更多了  
          loading: true   // 页面加载的状态  
      }  
-  4. methods: {  
+
+>  4. methods: {  
       // 触发刷新时的处理函数  
       onRefresh(done) {  
         this.noMore = false  
