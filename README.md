@@ -4,7 +4,7 @@
 
 ### 使用方法：  
 
-#### template:  
+#### template  
 
        <scroller  
            v-if="!loading && list.length"  
@@ -17,7 +17,7 @@
            </ul>  
        </scroller>  
 
-#### script:  
+#### script  
   
     1. import Scroller from '../../common/__Scroller/index.vue'  
 
