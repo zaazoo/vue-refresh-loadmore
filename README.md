@@ -2,7 +2,7 @@
 
 ## 基于vue2.0的上拉加载&下拉刷新组件
 
-## 使用方法：  
+### 使用方法：  
 
     1. import Scroller from '../../common/__Scroller/index.vue'  
 
