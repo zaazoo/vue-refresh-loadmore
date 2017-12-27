@@ -7,8 +7,8 @@
     1. import Scroller from '../../common/__Scroller/index.vue'  
 
     2. components: {  
-       Scroller  
-    }  
+           Scroller  
+       }  
 
     3. data() {  
        return {  
