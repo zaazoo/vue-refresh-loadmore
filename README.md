@@ -14,7 +14,7 @@
            return {  
            noMore: false,  // 没有更多了  
            loading: true,  // 页面加载的状态  
-           list: []        // 页面li数据
+           list: []        // 页面li数据
        }
 
     4. methods: {  
