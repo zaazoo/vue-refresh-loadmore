@@ -20,12 +20,12 @@
       // 触发刷新时的处理函数  
       onRefresh(done) {  
         this.noMore = false  
-        // TODO ...  
+
         // 完成请求后，手动执行done()，关闭加载占位  
       },  
       // 触发加载更多时的处理函数   
       onLoadmore(done) {  
-        // TODO ...  
+
         // 完成请求后，手动执行done()，关闭加载占位  
         // 如没有更多了，需将 this.noMore 置为 true  
       }  
