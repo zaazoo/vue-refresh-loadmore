@@ -60,26 +60,24 @@
             const params = {  
                 page: this.page  
             }  
-            axios.get('url', { params: params })  
-                .then(res => {  
-                    if (!type) this.loading = false  // 初始化加载完成  
-                    
-                    let data = res.data.data  
-                    if (this.page === 1) {  
-                        this.list = data.list  
-                    } else {  
-                        this.list = [].concat(this.list, data.list)  
-                    }  
-
-                    // 如没有更多了，需将 this.noMore 置为 true  
-                    if (data.list.length === 0) {  
-                        this.noMore = true  
-                    }  
-                    
-                    // 完成请求后，手动执行done()，关闭加载占位  
-                    if(done) done(this.noMore)  
+            axios.get('url', { params: params }).then(res => {  
+                if (!type) this.loading = false  // 初始化加载完成  
+                
+                let data = res.data.data  
+                if (this.page === 1) {  
+                    this.list = data.list  
+                } else {  
+                    this.list = [].concat(this.list, data.list)  
                 }  
-            )  
+
+                // 如没有更多了，需将 this.noMore 置为 true  
+                if (data.list.length === 0) {  
+                    this.noMore = true  
+                }  
+                
+                // 完成请求后，手动执行done()，关闭加载占位  
+                if(done) done(this.noMore)  
+            })  
         }  
     }  
 
