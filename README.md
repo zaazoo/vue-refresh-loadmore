@@ -4,7 +4,22 @@
 
 ### 使用方法：  
 
-    1. import Scroller from '../../common/__Scroller/index.vue'  
+#### template:  
+
+       <scroller  
+           v-if="!loading && list.length"  
+           :loading="loading"  
+           :noMore="noMore"  
+           @onRefresh="onRefresh"  
+           @onLoadmore="onLoadmore">  
+           <ul>  
+               <li v-for="(item, index) in list" :key="index">...</li>  
+           </ul>  
+       </scroller>  
+
+#### script:  
+
+    1. import Scroller from '../../common/__Scroller/index.vue'  
 
     2. components: {  
            Scroller  
@@ -32,14 +47,3 @@
        }  
     }  
     
-    5. template:  
-       <scroller  
-           v-if="!loading && list.length"  
-           :loading="loading"  
-           :noMore="noMore"  
-           @onRefresh="onRefresh"  
-           @onLoadmore="onLoadmore">  
-           <ul>  
-               <li v-for="(item, index) in list" :key="index">...</li>  
-           </ul>  
-       </scroller>  
