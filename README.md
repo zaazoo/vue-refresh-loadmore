@@ -35,21 +35,21 @@
         }  
 
     4.  methods: {  
-        /* 触发刷新时的处理函数 */
+        /* 触发刷新时的处理函数 */  
         onRefresh (done) {  
             this.page = 1  
             this.noMore = false  
             this.getData('refresh', done)  
         },  
-        // 触发加载更多时的处理函数   
+        /* 触发加载更多时的处理函数 */  
         onLoadmore (done) {  
             this.page++  
             this.getData('loadmore', done)  
         },  
-        // 获取数据  
+        /* 获取数据  */   
         getData (type, done) {  
-            // 初始化加载  
-            if (!type) this.loading = true  
+            if (!type) this.loading = true    // 初始化加载  
+            
             // 请求数据 ( 建议使用axios )  
             const params = {  
                 page: this.page  
