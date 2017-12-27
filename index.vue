@@ -64,8 +64,10 @@
         const t = `translate(0px, ${this.iTop}px) translateZ(0px)`
         let styles = {
           '-webkit-transform': t,
-          'transform': t
-        }
+          'transform': t,
+          'transition-timing-function': 'cubic-bezier(0.1, 0.57, 0.1, 1)',
+          'transition-duration': '600ms'
+      }
         return styles
       }
     },
@@ -92,7 +94,7 @@
       touchMove(e) {
         if (this.refreshFlag || this.loadmoreFlag) return
         // transform: translate(0px, -784.677px) translateZ(0px)
-        let obj = document.querySelector('.scroll-view>div')
+        let obj = document.querySelector('.scroll-view > div')
         let iTransform = obj.style['-webkit-transform'] || obj.style['transform']
         let translateY = iTransform.split(' ')[1].split('px')[0]
 
