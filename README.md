@@ -18,8 +18,8 @@
        </scroller>  
 
 #### script:  
-
-     1. import Scroller from '../../common/__Scroller/index.vue'  
+  
+    1. import Scroller from '../../common/__Scroller/index.vue'  
 
     2. components: {  
            Scroller  
