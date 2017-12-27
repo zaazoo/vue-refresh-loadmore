@@ -1,7 +1,3 @@
-<!--
-  滚动组件，需要给此组件的父级正确的height
-  示例查看：./demo.vue
--->
 <template>
   <div class="mod-scroller"
        @touchmove="touchMove"
