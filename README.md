@@ -35,7 +35,7 @@
         }  
 
     4.  methods: {  
-        // 触发刷新时的处理函数  
+        /* 触发刷新时的处理函数 */
         onRefresh (done) {  
             this.page = 1  
             this.noMore = false  
