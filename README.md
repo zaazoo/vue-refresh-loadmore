@@ -13,8 +13,9 @@
     3. data() {  
            return {  
            noMore: false,  // 没有更多了  
-           loading: true   // 页面加载的状态  
-       }  
+           loading: true,  // 页面加载的状态  
+           list: []        // 页面li数据
+       }
 
     4. methods: {  
        // 触发刷新时的处理函数  
@@ -30,3 +31,15 @@
            // 如没有更多了，需将 this.noMore 置为 true  
        }  
     }  
+    
+    5. template:  
+       <scroller  
+           v-if="!loading && list.length"  
+           :noMore="noMore"  
+           :loading="loading"  
+           @onRefresh="onRefresh"  
+           @onLoadmore="onLoadmore">  
+           <ul>  
+               <li v-for="(item, index) in list">...</li>  
+           </ul>  
+       </scroller>  
