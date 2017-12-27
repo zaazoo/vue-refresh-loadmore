@@ -31,7 +31,7 @@
             Scroller  
         }  
 
-    3.  data() {  
+    3.  data () {  
             return {  
                 loading: true,  // 页面加载的状态  
                 noMore: false,  // 没有更多了  
