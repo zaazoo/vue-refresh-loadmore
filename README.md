@@ -1,6 +1,6 @@
 # vue-scroller
 
-## 基于vue2.0的上拉加载&下拉刷新组件
+#### 基于vue2.0的上拉加载&下拉刷新组件
 
 ### 使用方法：  
 
@@ -18,8 +18,8 @@
        </scroller>  
 
 #### script:  
-
-    1. import Scroller from '../../common/__Scroller/index.vue'  
+  
+    1. import Scroller from '../../common/__Scroller/index.vue'  
 
     2. components: {  
            Scroller  
