@@ -2,9 +2,9 @@
 
 > 基于vue2.0的上拉加载&下拉刷新组件  
 
-> <div style="color: red;"> 注意：需要给此组件的父级正确的height </div>  
-> <div style="color: red;"> 注意：需要给此组件的父级正确的height </div>  
-> <div style="color: red;"> 注意：需要给此组件的父级正确的height </div>  
+<div style="color: red;"> 注意：需要给此组件的父级正确的height </div>  
+<div style="color: red;"> 注意：需要给此组件的父级正确的height </div>  
+<div style="color: red;"> 注意：需要给此组件的父级正确的height </div>  
 
 ### 使用方法：  
 
