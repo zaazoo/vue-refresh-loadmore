@@ -1,6 +1,6 @@
 {
   "name": "vue-refresh-loadmore",
-  "version": "1.0.17",
+  "version": "1.0.22",
   "description": "vue component, refresh and loadmore",
   "main": "lib/Scroller.vue",
   "scripts": {
