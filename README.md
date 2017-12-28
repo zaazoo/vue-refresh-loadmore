@@ -25,7 +25,7 @@
   
 #### 二、script  
  
-    1.  import Scroller from './vue-scroller/index.vue'  
+    1.  import Scroller from '../plugins/vueScroller.vue'  
 
     2.  components: {  
             Scroller  
