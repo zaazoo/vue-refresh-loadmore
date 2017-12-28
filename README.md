@@ -1,4 +1,4 @@
-# vue-scroller
+# vue-refresh-loadmore
 
 > 基于vue2.0的上拉加载&下拉刷新组件  
   
@@ -25,7 +25,7 @@
   
 #### 二、script  
  
-    1.  import Scroller from '../plugins/vueScroller.vue'  
+    1.  import Scroller from 'vue-refresh-loadmore'  
 
     2.  components: {  
             Scroller  
@@ -87,6 +87,5 @@
   
 #### 三、运行  
 
-    $ npm install iscroll --save
-    $ npm install vue-iscroll-view --save
+    $ npm install vue-refresh-loadmore --save
     $ npm run dev
