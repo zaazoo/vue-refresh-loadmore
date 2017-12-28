@@ -9,8 +9,11 @@
     
     
 ## 使用方法：  
-  
-#### 一、template  
+
+#### 1、install  
+    $ npm install vue-refresh-loadmore --save
+    
+#### 2、template  
 
        <scroller  
             v-if="!loading && list.length"  
@@ -23,7 +26,7 @@
             </ul>  
        </scroller>  
   
-#### 二、script  
+#### 3、script  
  
     1.  import Scroller from 'vue-refresh-loadmore'  
 
@@ -84,8 +87,3 @@
     5.  created () {
         this.getData()
     }
-  
-#### 三、运行  
-
-    $ npm install vue-refresh-loadmore --save
-    $ npm run dev
