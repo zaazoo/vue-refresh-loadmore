@@ -1,10 +1,10 @@
 <template>
-  <div id="app"
+  <div id="Scroller"
   	   class="mod-scroller"
        @touchmove="touchMove"
        @touchend="touchEnd">
     <div class="refresh" v-show="!loading && topShow">{{topText}}</div>
-    <iscroll-view
+    <IScrollView
       ref="scrollView"
       class="scroll-view"
       :options="options"
@@ -16,7 +16,7 @@
           <div class="nomore">{{noMoreText}}</div>
         </div>
       </div>
-    </iscroll-view>
+    </IScrollView>
     <div class="loadmore" v-show="!loading && !noMore && bottomShow">{{bottomText}}</div>
   </div>
 </template>
@@ -28,7 +28,10 @@
 
   Vue.use(IScrollView, IScroll)
   export default {
-    components: {},
+  	name: 'scroller',
+    components: {
+    	  IScrollView
+    },
     data() {
       return {
         iTop: 0,
